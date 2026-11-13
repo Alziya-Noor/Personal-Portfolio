@@ -415,11 +415,6 @@ form button:hover {
     color: var(--deep-umber);
 }
 
-
-
-
-
-
 /* Initial state */
 .reveal {
     opacity: 0;
@@ -431,4 +426,73 @@ form button:hover {
 .reveal.show {
     opacity: 1;
     transform: translateY(0);
+}
+/* Dark Mode */
+body.dark{
+    background-color: #201713; /* Rich, deep brown */
+  color: #ffe7d1; /* Warm cream for body text */
+};
+body.dark.p{
+  color: #e3dafc;
+}
+body.dark .app-container,
+body.dark .hero-section,
+body.dark .about-me,
+body.dark .skills-section,
+body.dark .project-section,
+body.dark .my-journey,
+body.dark .contact-section {
+  background-color: #2a1c16; /* Slightly lighter but still deep brown */
+  border-color: #bfa084; /* Muted light gold */
+  color: #f6dcc0; /* Gentle peachy text inside sections */
+}
+body.dark .navbar{
+   background-color: #241912;
+}
+body.dark h1,
+body.dark .discription h4 {
+  color: #ffe9cc; /* Soft, bright cream for main headers */
+}
+body.dark h2
+  {
+  color: #ffd6a0; /* Muted gold for section headings */
+}
+body.dark h3 {
+  color: #ffbe76;
+  /* Warm gold for subheadings */
+}
+
+/* Toggle Button: high contrast and gold accent on hover */
+body.dark .toggle-btn {
+  color: #ffe9cc;
+}
+body.dark .toggle-btnhover {
+  color: #ffbe76;
+}
+/* Nav links: high contrast */
+body.dark .nav-links a {
+  color: #ffe1b9;
+}
+body.dark .nav-links a:hover {
+  color: #ffbe76;
+  font-weight: 600;
+}
+body.dark .contact-grid a{
+    color: var(--serene-nude);
+}
+body.dark .skills-card ,
+body.dark .journey-text,
+body.dark .about-card,
+body.dark .project-card {
+  background-color: #362320; /* Dark cocoa for cards */
+  color: var(--serene-nude); /* Creamy text */ 
+}
+body.dark .skills-card p ,
+/* body.dark .journey-text, */
+body.dark .about-card p,
+body.dark .project-card p{
+color: var(--serene-nude);
+}
+body.dark .nav-heading {
+    color: var(--etheral-glow);
 }
